@@ -35,6 +35,11 @@ const Container = styled.div<FigureProps>`
             width: 56px;
             height: 56px;
         }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
     }
 `
 
@@ -45,7 +50,6 @@ export default function Logo({ selectedSubject }: { selectedSubject: Subject }) 
         <img 
           src={selectedSubject.icon}
           alt={selectedSubject.title}
-          className="w-full h-full"
         />
       </figure>
       <h3>

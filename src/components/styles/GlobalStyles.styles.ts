@@ -7,8 +7,10 @@ const GlobalStyles = createGlobalStyle`
     --background-color: #F4F6FA; 
     --card-background-color: #fff;
     --progress-tracker-background-color: #fff;
-    --bg-primaryPurple : #6D28D9;
-    --bg-primaryPurpleLight: #7C3AED;
+    --primary-purple : #A729F5;
+    --primary-purple-light: #D394FA;
+    --dark-navy: "#313E51";
+    --light-navy: "#ABC1E1";
     --text-color: #313E51;
     --green: #26D782;
     --red: #EE5454;
@@ -20,6 +22,14 @@ const GlobalStyles = createGlobalStyle`
     --card-background-color: #3B4D66;
     --progress-tracker-background-color: #3B4D66;
     --text-color: #F4F6FA;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
   }
 
   body {
@@ -75,7 +85,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0.75rem; /* 12px */
     margin-top: 2rem; /* 32px */
     font-weight: 500;
-    background-color: #6D28D9; /* bg-primaryPurple */
+    background-color: #6D28D9; /* primary-purple */
     width: 100%;
     border-radius: 12px;
     font-size: 1.125rem; /* 18px */
@@ -83,7 +93,7 @@ const GlobalStyles = createGlobalStyle`
     transition: all 0.3s;
 
     &:hover {
-      background-color: #7C3AED; /* bg-primaryPurpleLight */
+      background-color: #7C3AED; /* primary-purple-light */
     }
 
     @media (min-width: 640px) {

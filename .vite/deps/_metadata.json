@@ -1,46 +1,61 @@
 {
-  "hash": "b97252a6",
+  "hash": "ef8c3aa8",
   "configHash": "9c85230a",
-  "lockfileHash": "09f91049",
-  "browserHash": "6cf371bf",
+  "lockfileHash": "de73ca4a",
+  "browserHash": "ac626671",
   "optimized": {
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "88c0ca26",
+      "fileHash": "c7c4db55",
       "needsInterop": true
     },
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "47ee7b4f",
+      "fileHash": "30716f5c",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "052fe250",
+      "fileHash": "9892406d",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.js",
       "file": "react-router-dom.js",
-      "fileHash": "2ae19dc3",
+      "fileHash": "fd0166c4",
       "needsInterop": false
     },
     "styled-components": {
       "src": "../../node_modules/styled-components/dist/styled-components.browser.esm.js",
       "file": "styled-components.js",
-      "fileHash": "caa8bfdd",
+      "fileHash": "6a208494",
+      "needsInterop": false
+    },
+    "react-redux": {
+      "src": "../../node_modules/react-redux/dist/react-redux.mjs",
+      "file": "react-redux.js",
+      "fileHash": "f35f956c",
+      "needsInterop": false
+    },
+    "@reduxjs/toolkit": {
+      "src": "../../node_modules/@reduxjs/toolkit/dist/redux-toolkit.modern.mjs",
+      "file": "@reduxjs_toolkit.js",
+      "fileHash": "53eba85a",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-OYP6L5KJ": {
-      "file": "chunk-OYP6L5KJ.js"
+    "chunk-5IFATXZH": {
+      "file": "chunk-5IFATXZH.js"
     },
-    "chunk-ATZAHYIB": {
-      "file": "chunk-ATZAHYIB.js"
+    "chunk-URNRBCZE": {
+      "file": "chunk-URNRBCZE.js"
+    },
+    "chunk-LNEMQRCO": {
+      "file": "chunk-LNEMQRCO.js"
     }
   }
 }
