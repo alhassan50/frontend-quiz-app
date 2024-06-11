@@ -46,17 +46,21 @@ const GlobalStyles = createGlobalStyle`
   h1 {
     font-size: 40px;
     font-weight: bold;
+    line-height: 60px;
 
     @media (min-width: 640px) {
       font-size: 52px;
+      line-height: 78px;
     }
-
+      
     @media (min-width: 768px) {
       font-size: 58px;
+      line-height: 87px;
     }
 
     @media (min-width: 1024px) {
       font-size: 64px;
+      line-height: 96px;
     }
   }
 
