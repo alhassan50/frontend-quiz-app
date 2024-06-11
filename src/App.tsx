@@ -5,6 +5,9 @@ import {
   RouterProvider
 } from "react-router-dom"
 
+//global styles
+import GlobalStyles from "./components/styles/GlobalStyles.styles"
+
 //pages
 import Home from './pages/home'
 import Quiz from './pages/quiz'
@@ -23,7 +26,10 @@ const router = createBrowserRouter(createRoutesFromElements(
 function App() {
 
   return (
-    <RouterProvider router={router} />
+    <>
+      <GlobalStyles />
+      <RouterProvider router={router} />
+    </>
   )
 }
 
