@@ -61,7 +61,7 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  .category-card, .answer-card {
+  .subject-card, .answer-card {
     background-color: var(--card-background-color);
     color: var(--text-color);
   }
