@@ -13,18 +13,18 @@ import styled from "styled-components";
 
 const Container = styled.header`
     padding-block: 26px;
+`
 
-    div {
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        gap: 16px;
-        max-width: 1440px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 6.5%;
-        padding-left: 6.5%;
-    }
+const Content = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 16px;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 6.5%;
+  padding-left: 6.5%;
 `
 
 
@@ -43,7 +43,7 @@ export default function Header() {
 
   return (
     <Container>
-        <div>
+        <Content>
             <figure>
               {
                 selectedSubject && 
@@ -52,7 +52,7 @@ export default function Header() {
             </figure>
 
             <ColorTheme />
-        </div>
+        </Content>
     </Container>
   )
 }

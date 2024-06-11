@@ -24,21 +24,23 @@ const GlobalStyles = createGlobalStyle`
     --text-color: #F4F6FA;
   }
 
+  @font-face {
+    font-family: 'Rubik';
+    src: url(/assets/fonts/Rubik-VariableFont_wght.ttf);
+  }
+
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Rubik', sans-serif
   }
 
   body {
     background-color: var(--background-color);
     color: var(--text-color);
-  }
-
-  h1, h2, h3, h4, h5, h6, p {
-    font-family: "Rubik", sans-serif !important;
   }
 
   h1 {
