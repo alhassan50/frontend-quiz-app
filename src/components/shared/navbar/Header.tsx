@@ -9,6 +9,23 @@ import getSubject from "../../../lib/getSubject";
 import { useDispatch } from "react-redux";
 import { selectSubject } from "../../../slices/subjectSlice";
 import Logo from "./Logo";
+import styled from "styled-components";
+
+const Container = styled.header`
+    padding-block: 26px;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        gap: 16px;
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 6.5%;
+        padding-left: 6.5%;
+    }
+`
 
 
 export default function Header() {
@@ -25,8 +42,8 @@ export default function Header() {
   }, [dispatch, selectedSubject])
 
   return (
-    <header className="py-[26px]">
-        <div className="flex justify-between items-center gap-4 max-w-[1440px] mx-auto px-[6.5%]">
+    <Container>
+        <div>
             <figure>
               {
                 selectedSubject && 
@@ -36,6 +53,6 @@ export default function Header() {
 
             <ColorTheme />
         </div>
-    </header>
+    </Container>
   )
 }
