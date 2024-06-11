@@ -18,7 +18,7 @@ const Container = styled.header`
 const Content = styled.div`
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   gap: 16px;
   max-width: 1440px;
   margin-right: auto;

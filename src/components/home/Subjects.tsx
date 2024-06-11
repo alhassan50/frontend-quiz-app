@@ -37,7 +37,7 @@ type Color = {
 const SubjectCard = styled.div<Color>`
     display: flex;
     gap: 16px;
-    align-content: center;
+    align-items: center;
     padding: 12px;
     border-radius: 12px;
     background-color: var(--card-background-color);
