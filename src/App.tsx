@@ -5,6 +5,9 @@ import {
   RouterProvider
 } from "react-router-dom"
 
+//global styles
+import GlobalStyles from "./components/styles/GlobalStyles.styles"
+
 //pages
 import Home from './pages/home'
 import Quiz from './pages/quiz'
@@ -16,14 +19,17 @@ import RootLayout from "./layouts/RootLayout"
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />}/>
-      <Route path=":category" element={<Quiz />}/>
+      <Route path=":subject" element={<Quiz />}/>
   </Route>
 ))
 
 function App() {
 
   return (
-    <RouterProvider router={router} />
+    <>
+      <GlobalStyles />
+      <RouterProvider router={router} />
+    </>
   )
 }
 
