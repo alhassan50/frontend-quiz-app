@@ -9,8 +9,8 @@ const GlobalStyles = createGlobalStyle`
     --progress-tracker-background-color: #fff;
     --primary-purple : #A729F5;
     --primary-purple-light: #D394FA;
-    --dark-navy: "#313E51";
-    --light-navy: "#ABC1E1";
+    --dark-navy: #313E51;
+    --light-navy: #ABC1E1;
     --text-color: #313E51;
     --green: #26D782;
     --red: #EE5454;
