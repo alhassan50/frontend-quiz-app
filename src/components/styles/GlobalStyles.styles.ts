@@ -77,29 +77,24 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  .subject-card, .answer-card {
-    background-color: var(--card-background-color);
-    color: var(--text-color);
-  }
-
-  .progress_tracker {
-    background-color: var(--progress-tracker-background-color);
-    color: var(--text-color);
-  }
-
   .btn-primary {
     padding: 0.75rem; /* 12px */
     margin-top: 2rem; /* 32px */
     font-weight: 500;
-    background-color: #6D28D9; /* primary-purple */
+    background-color: #A729F5; /* primary-purple */
     width: 100%;
     border-radius: 12px;
     font-size: 1.125rem; /* 18px */
     color: white;
     transition: all 0.3s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 
     &:hover {
-      background-color: #7C3AED; /* primary-purple-light */
+      background-color: #D394FA; /* primary-purple-light */
     }
 
     @media (min-width: 640px) {
@@ -109,7 +104,6 @@ const GlobalStyles = createGlobalStyle`
 
     @media (min-width: 768px) {
       padding: 1.5rem; /* 24px */
-      font-size: 28px;
     }
 
     @media (min-width: 1024px) {
