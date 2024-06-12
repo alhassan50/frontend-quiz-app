@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react"
+
+//utils
 import getSystemTheme from "../../../lib/getSystenTheme"
+
+//styles
 import { ColorThemeFlexContainer } from "../../styles/navbar/ColorTheme.styles"
 
 export default function ColorTheme() {

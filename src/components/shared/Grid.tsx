@@ -1,6 +1,9 @@
 import { ReactNode } from "react";
+
+//styles
 import { GridContainer, SectionContainer } from "../styles/layouts/Grid.styles";
 
+//props types
 type GridProps =  {
   children: ReactNode;
 }

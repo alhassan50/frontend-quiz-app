@@ -1,3 +1,4 @@
+//styles
 import { Container } from "../../styles/navbar/Logo.styles";
 
 export default function Logo({ selectedSubject }: { selectedSubject: Subject }) {

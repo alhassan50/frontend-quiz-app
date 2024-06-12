@@ -1,4 +1,6 @@
 import { Link, useLocation } from "react-router-dom"
+
+//styles
 import { ErrorMessageContainer, SubjectNotFoundFlexContainer } from "../styles/quiz/SubjectNotFound.styles"
 
 export default function SubjectNotFound() {

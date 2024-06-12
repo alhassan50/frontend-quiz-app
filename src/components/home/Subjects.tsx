@@ -6,7 +6,6 @@ import getAllSubjects from "../../lib/getAllSubjects"
 //styles
 import { SubjectsContainer, SubjectCard } from "../styles/home/Subjects.styles"
 
-
 export default function Subject() {
     const subject = getAllSubjects()
 
