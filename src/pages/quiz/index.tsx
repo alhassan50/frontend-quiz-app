@@ -112,36 +112,36 @@ function Quiz() {
             </section>
 
             <section>
-            <AnimatePresence>
-              <Options>
-                {question.options.map((possibleAnswer, index) => (
-                  <OptionItem
-                    key={possibleAnswer}
-                    $isAnswerSubmitted={isAnswerSubmitted}
-                    tabIndex={0}
-                    onKeyDown={(event) => handleAnswerSelectionWithEnterKey(event, possibleAnswer)}
-                  >
-                    <motion.div
-                      variants={variants}
-                      initial="enter"
-                      animate="center"
-                      exit="exit"
-                      transition={transition}
+              <AnimatePresence>
+                <Options>
+                  {question.options.map((possibleAnswer, index) => (
+                    <OptionItem
+                      key={possibleAnswer}
+                      $isAnswerSubmitted={isAnswerSubmitted}
+                      tabIndex={0}
+                      onKeyDown={(event) => handleAnswerSelectionWithEnterKey(event, possibleAnswer)}
                     >
-                      <AnswerCard 
-                        possibleAnswer={possibleAnswer}
-                        selectedAnswer={selectedAnswer}
-                        question={question}
-                        isAnswerSubmitted={isAnswerSubmitted}
-                        isAnswerCorrect={isAnswerCorrect}
-                        handleAnswerSelection={handleAnswerSelection}
-                        index={index}
-                      />
-                    </motion.div>
-                  </OptionItem>
-                ))}
-              </Options>
-            </AnimatePresence>
+                      <motion.div
+                        variants={variants}
+                        initial="enter"
+                        animate="center"
+                        exit="exit"
+                        transition={transition}
+                      >
+                        <AnswerCard 
+                          possibleAnswer={possibleAnswer}
+                          selectedAnswer={selectedAnswer}
+                          question={question}
+                          isAnswerSubmitted={isAnswerSubmitted}
+                          isAnswerCorrect={isAnswerCorrect}
+                          handleAnswerSelection={handleAnswerSelection}
+                          index={index}
+                        />
+                      </motion.div>
+                    </OptionItem>
+                  ))}
+                </Options>
+              </AnimatePresence>
 
               <div className="grid gap-3 sm:gap-5 md:gap-8">
                 {
