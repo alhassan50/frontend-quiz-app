@@ -42,7 +42,6 @@ const FlexContainer = styled.div<Props>`
     position: relative;
     border-radius: 20px;
     background-color: var(--primary-purple);
-    outline: none;
     border: none;
     cursor: pointer;
 
