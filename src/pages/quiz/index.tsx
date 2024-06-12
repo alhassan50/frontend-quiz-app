@@ -88,6 +88,18 @@ function Quiz() {
     hideSubmissionErrorMsg()
     setSelectedAnswer(selectedAnswer)
   }
+  
+  const handleAnswerSelectionWithEnterKey = (event: React.KeyboardEvent<HTMLLIElement>, selectedAnswer: string) => {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // Prevent the default behavior of the Enter key
+      if (isAnswerSubmitted) {
+        alert('Answer already submitted. Please move on to the next question.')
+      } else {
+        hideSubmissionErrorMsg()
+        setSelectedAnswer(selectedAnswer)
+      }
+    }
+  }
 
   const hideSubmissionErrorMsg = () => {
     setShowSubmissionErrorMsg(false)
@@ -152,6 +164,7 @@ function Quiz() {
                     key={possibleAnswer}
                     isAnswerSubmitted={isAnswerSubmitted}
                     tabIndex={0}
+                    onKeyDown={(event) => handleAnswerSelectionWithEnterKey(event, possibleAnswer)}
                   >
                     <AnswerCard 
                       possibleAnswer={possibleAnswer}
