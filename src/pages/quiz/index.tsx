@@ -5,6 +5,7 @@ import Grid from "../../components/shared/Grid";
 import Question from "../../components/quiz/Question";
 import styled from "styled-components";
 import AnswerCard from "../../components/quiz/AnswerCard";
+import CategoryNotFound from "../../components/quiz/SubjectNotFound";
 
 type Question = {
   question: string;
@@ -126,7 +127,7 @@ function Quiz() {
         
     
   //renderes error when subject selected not found
-  if (!quizData) return <h1>Error</h1>
+  if (!quizData)return <CategoryNotFound />
 
   return (
     <ul>
