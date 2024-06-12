@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom"
+
+//styles
 import { ErrorMessageContainer, SubjectNotFoundFlexContainer } from "../styles/quiz/SubjectNotFound.styles"
 
-export default function CategoryNotFound() {
+export default function SubjectNotFound() {
     const location = useLocation()
     const pathname = location.pathname.split('/')[1]
   return (

@@ -3,12 +3,16 @@ import { useLocation } from "react-router-dom";
 
 //components
 import ColorTheme from "./ColorTheme";
+import Logo from "./Logo";
 
 //utils
 import getSubject from "../../../lib/getSubject";
+
+//redux
 import { useDispatch } from "react-redux";
 import { selectSubject } from "../../../slices/subjectSlice";
-import Logo from "./Logo";
+
+//styles
 import { Container, Content } from "../../styles/navbar/Header.styles";
 
 
@@ -21,6 +25,7 @@ export default function Header() {
   //get quiz selected subject
   const selectedSubject = getSubject(path)
 
+  //set selected to subject
   useEffect(() => {
     dispatch(selectSubject(selectedSubject))
   }, [dispatch, selectedSubject])
