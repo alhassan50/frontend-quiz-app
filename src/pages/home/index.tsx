@@ -1,6 +1,8 @@
 //components
 import Subjects from "../../components/home/Subjects"
 import Grid from "../../components/shared/Grid"
+
+//styles
 import { GridContent } from "../../components/styles/home/index.styles"
 
 function Home() {

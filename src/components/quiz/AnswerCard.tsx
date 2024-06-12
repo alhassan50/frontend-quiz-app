@@ -1,6 +1,7 @@
+//styles
 import { AnswerCardContainer, Figure, IconContainer } from '../styles/quiz/AnswerCard.styles';
 
-// type 
+// prop type 
 type Props = {
     question: Question,
     possibleAnswer: string, 
@@ -26,13 +27,13 @@ export default function AnswerCard({
         <AnswerCardContainer 
             onClick={() => handleAnswerSelection(possibleAnswer)}
             selected={isSelected}
-            correct={isAnswerCorrect}
-            submitted={isAnswerSubmitted}
+            $correct={isAnswerCorrect}
+            $submitted={isAnswerSubmitted}
         >
             <IconContainer 
                 selected={isSelected} 
-                correct={isCorrect} 
-                submitted={isAnswerSubmitted}
+                $correct={isCorrect} 
+                $submitted={isAnswerSubmitted}
                 className='answer-tag'
             >
                 <h3>

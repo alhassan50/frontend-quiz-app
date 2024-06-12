@@ -20,7 +20,7 @@ export const SubjectsContainer = styled.ul`
     }
 `
 
-export const SubjectCard = styled.div<{backgroundColor: string}>`
+export const SubjectCard = styled.div<{$backgroundColor: string}>`
 display: flex;
 gap: 16px;
 align-items: center;
@@ -44,7 +44,7 @@ figure {
     width: 40px;
     height: 40px;
     border-radius: 6px;
-    background-color: ${({ backgroundColor }) => backgroundColor || 'red'};
+    background-color: ${({ $backgroundColor }) => $backgroundColor || ''};
 
     img {
         width: 100%;

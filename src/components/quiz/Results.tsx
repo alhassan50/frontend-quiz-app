@@ -1,10 +1,18 @@
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
+//components
 import Grid from "../../components/shared/Grid";
+import Logo from "../shared/navbar/Logo";
+
+//redux
 import { useSelector } from "react-redux";
 import { getSelectedSubject } from "../../slices/subjectSlice";
-import Logo from "../shared/navbar/Logo";
+
+//react confetti
 import Confetti from "react-confetti";
-import { useEffect, useState } from "react";
+
+//styles
 import { ResultContainer, Section, TextContainer } from "../styles/quiz/Results.styles";
 
 export default function Results({ quizScore, quizLength }: { quizScore: number, quizLength: number }) {
