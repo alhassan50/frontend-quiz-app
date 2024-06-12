@@ -4,7 +4,7 @@ import { QuestionFlexContainer } from "../styles/quiz/Question.styles"
 
 function Question({questionStep, quizLength, question}: {questionStep: number, quizLength:  number, question: string}) {
   return (
-    <QuestionFlexContainer gap={80}>
+    <QuestionFlexContainer $gap={80}>
         <QuestionFlexContainer>
           <p>
             Question {questionStep + 1} of {quizLength}

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div<{bgColor?: string}>`
+export const Container = styled.div<{$bgColor?: string}>`
     display: flex;
     gap: 16px;
     align-items: center;
@@ -14,7 +14,7 @@ export const Container = styled.div<{bgColor?: string}>`
         width: 40px;
         height: 40px;
         border-radius: 6px;
-        background-color: ${(props) => props.bgColor || '#fff'};
+        background-color: ${(props) => props.$bgColor || '#fff'};
 
         @media (min-width: 640px) {
             width: 48px;

@@ -46,6 +46,6 @@ export const QuizFlexContainer = styled.div`
   }
 `
 
-export const OptionItem = styled.li<{isAnswerSubmitted: boolean }>`
-  cursor: ${({isAnswerSubmitted}) => isAnswerSubmitted ? 'not-allowed' : ''};
+export const OptionItem = styled.li<{$isAnswerSubmitted: boolean }>`
+  cursor: ${({$isAnswerSubmitted}) => $isAnswerSubmitted ? 'not-allowed' : ''};
 `

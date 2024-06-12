@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
-export const QuestionFlexContainer = styled.div<{gap?: number}>`
+export const QuestionFlexContainer = styled.div<{$gap?: number}>`
     display: flex;
     flex-direction: column;
     gap: 16px;
 
     @media (min-width: 768px) {
-    gap: ${({gap}) => `${gap}px`};
+    gap: ${({$gap}) => `${$gap}px`};
     }
 
     p {

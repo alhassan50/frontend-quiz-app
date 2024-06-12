@@ -26,13 +26,13 @@ export default function AnswerCard({
         <AnswerCardContainer 
             onClick={() => handleAnswerSelection(possibleAnswer)}
             selected={isSelected}
-            correct={isAnswerCorrect}
-            submitted={isAnswerSubmitted}
+            $correct={isAnswerCorrect}
+            $submitted={isAnswerSubmitted}
         >
             <IconContainer 
                 selected={isSelected} 
-                correct={isCorrect} 
-                submitted={isAnswerSubmitted}
+                $correct={isCorrect} 
+                $submitted={isAnswerSubmitted}
                 className='answer-tag'
             >
                 <h3>
