@@ -87,7 +87,6 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.125rem; /* 18px */
     color: white;
     transition: all 0.3s;
-    outline: none;
     border: none;
     cursor: pointer;
     font-size: 1.125rem;
