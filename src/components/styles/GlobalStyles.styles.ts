@@ -41,6 +41,31 @@ const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--background-color);
     color: var(--text-color);
+    background-image: url('/assets/images/pattern-background-mobile-light.svg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: 640px) {
+      background-image: url('/assets/images/pattern-background-tablet-light.svg');
+    }
+    
+    @media (min-width: 1024px) {
+      background-image: url('/assets/images/pattern-background-desktop-light.svg');
+    }
+  }
+
+  :root[data-theme='dark'] body {
+    background-image: url('/assets/images/pattern-background-mobile-dark.svg');
+
+    @media (min-width: 640px) {
+      background-image: url('/assets/images/pattern-background-tablet-dark.svg');
+    }
+    
+    @media (min-width: 1024px) {
+      background-image: url('/assets/images/pattern-background-desktop-dark.svg');
+    }
   }
 
   h1 {
