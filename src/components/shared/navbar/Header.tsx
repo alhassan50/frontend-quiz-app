@@ -9,23 +9,7 @@ import getSubject from "../../../lib/getSubject";
 import { useDispatch } from "react-redux";
 import { selectSubject } from "../../../slices/subjectSlice";
 import Logo from "./Logo";
-import styled from "styled-components";
-
-const Container = styled.header`
-    padding-block: 26px;
-`
-
-const Content = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 6.5%;
-  padding-left: 6.5%;
-`
+import { Container, Content } from "../../styles/navbar/Header.styles";
 
 
 export default function Header() {
