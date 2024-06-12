@@ -1,3 +1,4 @@
+//styles
 import { Container } from "../styles/quiz/QuizProgressTracker.styles"
 
 function QuizProgressTracker({length}: {length: string}) {

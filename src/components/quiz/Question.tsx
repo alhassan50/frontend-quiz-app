@@ -1,5 +1,7 @@
 //components
 import QuizProgressTracker from "./QuizProgressTracker"
+
+//styles
 import { QuestionFlexContainer } from "../styles/quiz/Question.styles"
 
 function Question({questionStep, quizLength, question}: {questionStep: number, quizLength:  number, question: string}) {
@@ -16,7 +18,7 @@ function Question({questionStep, quizLength, question}: {questionStep: number, q
         </QuestionFlexContainer>
 
         <QuizProgressTracker 
-            length={`${((questionStep+1)/quizLength)*100}%`}
+          length={`${((questionStep+1)/quizLength)*100}%`}
         />
     </QuestionFlexContainer>
   )

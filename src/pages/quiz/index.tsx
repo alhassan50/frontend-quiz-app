@@ -1,12 +1,20 @@
 import { useState } from "react"
 import { useLocation } from "react-router-dom"
+
+//utils
 import fetchQuizQestions from "../../lib/fetchQuizQestions";
+
+//components
 import Grid from "../../components/shared/Grid";
 import Question from "../../components/quiz/Question";
 import AnswerCard from "../../components/quiz/AnswerCard";
 import SubjectNotFound from "../../components/quiz/SubjectNotFound";
 import Results from "../../components/quiz/Results";
+
+//styles
 import { QuizFlexContainer, OptionItem, Options } from "../../components/styles/quiz/index.styles";
+
+//framer
 import { AnimatePresence, motion } from "framer-motion";
 import { variants, transition } from "../../lib/variants";
 
@@ -86,7 +94,7 @@ function Quiz() {
   //renderes error when subject selected not found
   if (!quizData)return <SubjectNotFound />
 
-  //display results on request
+  //display results on quiz completion
   if (showResults) return <Results quizScore={quizScore} quizLength={quizData.length} />
 
   return (

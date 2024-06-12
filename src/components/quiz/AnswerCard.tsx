@@ -1,6 +1,7 @@
+//styles
 import { AnswerCardContainer, Figure, IconContainer } from '../styles/quiz/AnswerCard.styles';
 
-// type 
+// prop type 
 type Props = {
     question: Question,
     possibleAnswer: string, 
