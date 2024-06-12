@@ -58,8 +58,8 @@ const FlexContainer = styled.div<Props>`
         background-color: white;
         position: absolute;
         top: 50%;
-        left: 1px;
         transform: translateY(-50%);
+        left: ${({ theme }) => theme === 'light' ? '4px' : 'calc(100% - 12px - 4px)'};
         transition: all 200ms ease;
 
         @media (min-width: 640px) {
