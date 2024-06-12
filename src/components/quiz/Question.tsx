@@ -30,20 +30,21 @@ const FlexContainer = styled.div<Gap>`
     h2 {
         font-size: 20px;
         font-weight: 600;
+        line-height: 30px;
     
         @media (min-width: 640px) {
             font-size: 24px;
-            line-height: 2rem;
+            line-height: 36px;
         }
         
         @media (min-width: 768px) {
             font-size: 32px;
-            line-height: 2.15rem;
+            line-height: 48px;
         }
         
         @media (min-width: 1024px) {
             font-size: 36px;
-            line-height: 2.5rem/* 40px */;
+            line-height: 54px;
         }
     }
 
