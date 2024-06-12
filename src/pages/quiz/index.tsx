@@ -6,6 +6,7 @@ import Question from "../../components/quiz/Question";
 import styled from "styled-components";
 import AnswerCard from "../../components/quiz/AnswerCard";
 import CategoryNotFound from "../../components/quiz/SubjectNotFound";
+import Results from "../../components/quiz/Results";
 
 type Question = {
   question: string;
@@ -79,8 +80,6 @@ function Quiz() {
   const [showResults, setShowResults] = useState<boolean>(false)
   const [showSubmissionErrorMsg, setShowSubmissionErrorMsg] = useState<boolean>(false)
 
-  console.log(showResults, quizScore)
-
   const increaseQuizScore = () => {
     setQuizScore(prevScore => prevScore + 1)
   }
@@ -128,6 +127,9 @@ function Quiz() {
     
   //renderes error when subject selected not found
   if (!quizData)return <CategoryNotFound />
+
+  //display results on request
+  if (showResults) return <Results quizScore={quizScore} quizLength={quizData.length} />
 
   return (
     <ul>
