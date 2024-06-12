@@ -7,6 +7,8 @@ import AnswerCard from "../../components/quiz/AnswerCard";
 import CategoryNotFound from "../../components/quiz/SubjectNotFound";
 import Results from "../../components/quiz/Results";
 import { QuizFlexContainer, OptionItem, Options } from "../../components/styles/quiz/index.styles";
+import { AnimatePresence, motion } from "framer-motion";
+import { variants, transition } from "../../lib/variants";
 
 function Quiz() {
   const location = useLocation()
@@ -102,6 +104,7 @@ function Quiz() {
             </section>
 
             <section>
+            <AnimatePresence>
               <Options>
                 {question.options.map((possibleAnswer, index) => (
                   <OptionItem
@@ -110,18 +113,27 @@ function Quiz() {
                     tabIndex={0}
                     onKeyDown={(event) => handleAnswerSelectionWithEnterKey(event, possibleAnswer)}
                   >
-                    <AnswerCard 
-                      possibleAnswer={possibleAnswer}
-                      selectedAnswer={selectedAnswer}
-                      question={question}
-                      isAnswerSubmitted={isAnswerSubmitted}
-                      isAnswerCorrect={isAnswerCorrect}
-                      handleAnswerSelection={handleAnswerSelection}
-                      index={index}
-                    />
+                    <motion.div
+                      variants={variants}
+                      initial="enter"
+                      animate="center"
+                      exit="exit"
+                      transition={transition}
+                    >
+                      <AnswerCard 
+                        possibleAnswer={possibleAnswer}
+                        selectedAnswer={selectedAnswer}
+                        question={question}
+                        isAnswerSubmitted={isAnswerSubmitted}
+                        isAnswerCorrect={isAnswerCorrect}
+                        handleAnswerSelection={handleAnswerSelection}
+                        index={index}
+                      />
+                    </motion.div>
                   </OptionItem>
                 ))}
               </Options>
+            </AnimatePresence>
 
               <div className="grid gap-3 sm:gap-5 md:gap-8">
                 {
