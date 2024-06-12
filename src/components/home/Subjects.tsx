@@ -7,13 +7,13 @@ import getAllSubjects from "../../lib/getAllSubjects"
 import { SubjectsContainer, SubjectCard } from "../styles/home/Subjects.styles"
 
 
-export default function Categories() {
-    const categories = getAllSubjects()
+export default function Subject() {
+    const subject = getAllSubjects()
 
     return (
         <SubjectsContainer>
             {
-                categories.map((subject: Subject) => (
+                subject.map((subject: Subject) => (
                     <li key={subject.title}>
                         <Link to={`/${subject.title}`} >
                             <SubjectCard backgroundColor={subject.color}>

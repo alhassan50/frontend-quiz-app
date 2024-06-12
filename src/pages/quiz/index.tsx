@@ -4,7 +4,7 @@ import fetchQuizQestions from "../../lib/fetchQuizQestions";
 import Grid from "../../components/shared/Grid";
 import Question from "../../components/quiz/Question";
 import AnswerCard from "../../components/quiz/AnswerCard";
-import CategoryNotFound from "../../components/quiz/SubjectNotFound";
+import SubjectNotFound from "../../components/quiz/SubjectNotFound";
 import Results from "../../components/quiz/Results";
 import { QuizFlexContainer, OptionItem, Options } from "../../components/styles/quiz/index.styles";
 import { AnimatePresence, motion } from "framer-motion";
@@ -84,7 +84,7 @@ function Quiz() {
         
     
   //renderes error when subject selected not found
-  if (!quizData)return <CategoryNotFound />
+  if (!quizData)return <SubjectNotFound />
 
   //display results on request
   if (showResults) return <Results quizScore={quizScore} quizLength={quizData.length} />
