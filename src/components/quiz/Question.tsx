@@ -2,11 +2,7 @@
 import styled from "styled-components"
 import QuizProgressTracker from "./QuizProgressTracker"
 
-type Gap = {
-    gap?: number
-}
-
-const FlexContainer = styled.div<Gap>`
+const FlexContainer = styled.div<{gap?: number}>`
     display: flex;
     flex-direction: column;
     gap: 16px;

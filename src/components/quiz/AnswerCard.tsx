@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-// type
-type Question = {
-    question: string;
-    options: string[];
-    answer: string;
-}
-
 // type 
 type Props = {
     question: Question,

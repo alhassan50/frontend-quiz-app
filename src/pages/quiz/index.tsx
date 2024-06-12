@@ -8,12 +8,6 @@ import AnswerCard from "../../components/quiz/AnswerCard";
 import CategoryNotFound from "../../components/quiz/SubjectNotFound";
 import Results from "../../components/quiz/Results";
 
-type Question = {
-  question: string;
-  options: string[];
-  answer: string;
-}
-
 const Options = styled.ul`
   /* sm:gap-4 md:gap-6 text */
   display: grid;

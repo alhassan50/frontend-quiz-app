@@ -2,11 +2,7 @@ import { useEffect, useState } from "react"
 import getSystemTheme from "../../../lib/getSystenTheme"
 import styled from "styled-components"
 
-type Props = {
-    theme: string
-}
-
-const FlexContainer = styled.div<Props>`
+const FlexContainer = styled.div<{theme: string}>`
   display: flex;
   justify-content: center;
   align-items: center;

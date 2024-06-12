@@ -1,11 +1,7 @@
 import styled from "styled-components"
 
-type Props = {
-    length: string
-}
 
-
-const Container = styled.div<Props>`
+const Container = styled.div<{length: string}>`
     width: 100%;
     padding: 4px;
     border-radius: 50px;

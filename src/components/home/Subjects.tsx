@@ -4,11 +4,6 @@ import { Link } from "react-router-dom"
 import getAllSubjects from "../../lib/getAllSubjects"
 import styled from "styled-components"
 
-type Subject = {
-    title: string,
-    icon: string,
-    color: string,
-}
 
 const SubjectsContainer = styled.ul`
     display: grid;
@@ -30,11 +25,7 @@ const SubjectsContainer = styled.ul`
     }
 `
 
-type Color = {
-    backgroundColor: string
-}
-
-const SubjectCard = styled.div<Color>`
+const SubjectCard = styled.div<{backgroundColor: string}>`
     display: flex;
     gap: 16px;
     align-items: center;
