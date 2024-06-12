@@ -78,6 +78,8 @@ function Quiz() {
   const [showResults, setShowResults] = useState<boolean>(false)
   const [showSubmissionErrorMsg, setShowSubmissionErrorMsg] = useState<boolean>(false)
 
+  console.log(showResults, quizScore)
+
   const increaseQuizScore = () => {
     setQuizScore(prevScore => prevScore + 1)
   }
