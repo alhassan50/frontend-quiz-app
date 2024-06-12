@@ -1,11 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type Subject = {
-    title: string,
-    icon: string,
-    color: string,
-}
-
 const initialState: Subject = {
     title: "",
     icon: "",
