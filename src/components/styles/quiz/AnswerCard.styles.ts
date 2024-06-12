@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AnswerCardContainer = styled.div<{ selected: boolean; correct: boolean | null; submitted: boolean }>`
+export const AnswerCardContainer = styled.div<{ selected: boolean; $correct: boolean | null; $submitted: boolean }>`
     display: grid;
     grid-template-columns: 40px 1fr 24px;
     gap: 1rem;
@@ -24,16 +24,16 @@ export const AnswerCardContainer = styled.div<{ selected: boolean; correct: bool
         color: ${({selected}) => selected ? '' : 'var(--primary-purple)'};
     }
 
-    ${({ submitted, selected, correct }) => submitted ? `
+    ${({ $submitted, selected, $correct }) => $submitted ? `
         cursor: not-allowed;
         pointer-events: none;
-        border-color: ${selected ? (correct ? 'var(--green)' : 'var(--red)') : 'var(--card-background-color)'};
+        border-color: ${selected ? ($correct ? 'var(--green)' : 'var(--red)') : 'var(--card-background-color)'};
         ` : `
         border-color: ${selected ? 'var(--primary-purple)' : 'var(--card-background-color)'};
     `}
 `;
 
-export const IconContainer = styled.div<{ selected: boolean; correct: boolean | null; submitted: boolean }>`
+export const IconContainer = styled.div<{ selected: boolean; $correct: boolean | null; $submitted: boolean }>`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,9 +41,9 @@ export const IconContainer = styled.div<{ selected: boolean; correct: boolean | 
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 6px;
-    background-color: ${({ selected, correct, submitted }) => 
-    submitted ? 
-    (selected ? (correct ? 'var(--green)' : 'var(--red)') : '#F4F6FA') : 
+    background-color: ${({ selected, $correct, $submitted }) => 
+    $submitted ? 
+    (selected ? ($correct ? 'var(--green)' : 'var(--red)') : '#F4F6FA') : 
     (selected ? 'var(--primary-purple)' : '#F4F6FA')
     };
 

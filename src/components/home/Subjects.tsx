@@ -16,7 +16,7 @@ export default function Subject() {
                 subject.map((subject: Subject) => (
                     <li key={subject.title}>
                         <Link to={`/${subject.title}`} >
-                            <SubjectCard backgroundColor={subject.color}>
+                            <SubjectCard $backgroundColor={subject.color}>
                                 <figure>
                                     <img 
                                         src={subject.icon}

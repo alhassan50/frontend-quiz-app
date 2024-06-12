@@ -109,7 +109,7 @@ function Quiz() {
                 {question.options.map((possibleAnswer, index) => (
                   <OptionItem
                     key={possibleAnswer}
-                    isAnswerSubmitted={isAnswerSubmitted}
+                    $isAnswerSubmitted={isAnswerSubmitted}
                     tabIndex={0}
                     onKeyDown={(event) => handleAnswerSelectionWithEnterKey(event, possibleAnswer)}
                   >
